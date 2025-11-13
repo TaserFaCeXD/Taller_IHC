@@ -1,0 +1,217 @@
+/* Seccion de logo y menus */
+.topheader {
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+body {
+  background-color: rgb(255, 240, 240);
+  margin: 0;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 195, 195);
+}
+
+.Menu-Horizontal li a:hover {
+  color: white;
+  font-size: 1.563rem;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 9.375rem;
+  background-color: rgb(248, 189, 189);
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 0.938rem;
+  color: white;
+}
+
+.Menu-Vertical li:hover {
+  background-color: white;
+}
+
+.Menu-Vertical li a:hover {
+  color: red;
+}
+
+.logo {
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+
+.logo img {
+  width: 70%;
+}
+
+/* Seccion productos */
+.seccion-productos {
+  padding: 6.875rem 1.25rem;
+  background-color: rgb(255, 240, 240);
+}
+
+.div-gral-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem; /* Separacion de las dos flex (divisiones)*/
+}
+
+.div-prod-texto {
+  flex: 1;
+}
+
+.div-prod-texto h1 {
+  color: red;
+  margin-bottom: 0.938rem;
+}
+
+.div-prod-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.div-prod-img {
+  flex: 1;
+}
+
+.div-prod-img img {
+  width: 100%; /*  ancho de la pantalla */
+  max-width: 18.75rem; /* pixeles maximos */
+}
+
+/* Seccion banca */
+.seccion-banca {
+  padding: 3.75rem 1.25rem;
+  background-color: rgb(255, 240, 240);
+}
+
+.div-gral-banca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-banca-texto {
+  flex: 1;
+}
+
+.div-banca-texto h1 {
+  color: red;
+  margin-bottom: 0.938rem;
+}
+
+.div-banca-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.div-banca-video {
+  flex: 1;
+  align-items: center;
+}
+
+.div-banca-video iframe {
+  width: 100%; /* ancho de la pantalla */
+  max-width: 31.25rem; /* pixeles maximos */
+}
+
+.seccion-formulario {
+  background-color: rgb(255, 81, 81);
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-cont-formulario {
+  background-color: rgba(255, 165, 165, 0.863);
+  padding: 1.875rem;
+  border: 0.125rem solid white;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+  color: white;
+}
+
+.campo {
+  border: 0.063rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 240, 240);
+}
+
+.formulario-registro {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: rgb(56, 0, 0);
+}
+
+/* inputs y selects */
+input[type="text"],
+select {
+  width: 96%;
+  padding: 0.625rem;
+  border: 0.063rem solid red;
+  border-radius: 0.313rem;
+}
+
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+  background-color: rgba(255, 109, 109, 0.178);
+  border-radius: 0.313rem;
+}
+
+button {
+  background-color: red;
+  padding: 0.625rem 1.25rem;
+  color: white;
+  border: 0.063rem solid white;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+
+.boton-align {
+  display: flex;
+  justify-content: center;
+}
+
+.campo-pais-align {
+  width: 100%;
+}

@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="Pie.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
   </head>
   <body>
     <!-- Sección de logo y menús -->
     <nav class="topheader">
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
       <a href="" class="logo">
         <img
           height=""
@@ -33,6 +39,7 @@
         </li>
         <li><a href="">Banca por Internet</a></li>
         <li><a href="">Contáctanos</a></li>
+        <li><a href="#iniciar-sesion">Iniciar sesion</a></li>
       </ul>
     </nav>
     <!-- Sección productos -->
@@ -190,7 +197,7 @@
       </div>
     </section>
     <!-- Seccion iniciar sesion -->
-    <section class="login-container">
+    <section class="login-container" id="iniciar-sesion">
       <div class="login-box">
         <h2>Iniciar Sesión</h2>
 
@@ -281,5 +288,6 @@
       </footer>
     </section>
     <script src="login.js"></script>
+    <script src="menu_toogle.js"></script>
   </body>
 </html>

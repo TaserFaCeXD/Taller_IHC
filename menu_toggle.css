@@ -18,18 +18,27 @@
   .Menu-Horizontal {
     display: none; /* Ocultar menú horizontal por defecto */
     flex-direction: column; /* Mostrarlo en vertical al activarse */
-    width: 100%;
+    width: 60%;
     background-color: white;
     position: absolute;
     top: 5rem; /* Debajo del menú fijo */
     left: 0;
+    max-width: 10rem;
   }
 
   .Menu-Horizontal.active {
     display: flex; /* Mostrar menú al activar la clase */
+    background-color: rgba(255, 165, 165, 0.863);
+    font-size: 1.5rem;
   }
 
   .Menu-Horizontal li {
-    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    border-bottom: 1px solid white; /* Líneas separadoras */
+  }
+
+  .Menu-Horizontal li a {
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }

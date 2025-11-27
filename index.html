@@ -7,6 +7,7 @@
     <title>HTML + CSS</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <!-- Sección de logo y menús -->
@@ -188,6 +189,38 @@
         </form>
       </div>
     </section>
+    <!-- Seccion iniciar sesion -->
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Iniciar Sesión</h2>
+
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+      </div>
+    </section>
     <!-- PIE DE PAGINA -->
 
     <section id="footer">
@@ -247,5 +280,6 @@
         </div>
       </footer>
     </section>
+    <script src="login.js"></script>
   </body>
 </html>
